@@ -1,28 +1,10 @@
 #!/usr/bin/env python3
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname('__file__'), '../include')))
-from google_drive_tools import *
+from include import *
 
-#Move to ../include
-import os
-import re
-import sys
-import time
-import difflib
-import requests
-import itertools
-import numpy as np
-import pandas as pd
-import Levenshtein as lv
-from unidecode import unidecode
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname('__file__'), '..')))
-from google_drive_tools import *
-from wos_parser import *
-from wos_scp import * 
-from merge_tools import *
-#import search_replace
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.max_colwidth',1000)
@@ -330,6 +312,7 @@ class wosplus:
         exec('self.{}_{}=LEFT_RIGHT'.format(left,right))
         self.type['{}_{}'.format(left,right)]='{}_{}'.format(left,right)        
         self.biblio['{}_{}'.format(left,right)]=LEFT_RIGHT
+
 if __name__=='__main__':
     WOS_file='CIB_Wos.xlsx'
     SCI_file='CIB_Scielo.xlsx'
