@@ -1,1 +1,1 @@
-from wosplus import *
+from . import wosplus

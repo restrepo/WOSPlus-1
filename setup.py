@@ -9,7 +9,7 @@
 #-----------------------------------------------------------------------------
 
 from __future__ import print_function
-from setuptools import setup
+from setuptools import setup, find_packages
 
 import os
 import shutil
@@ -40,7 +40,7 @@ setup(
     author_email="restrepo@udea.edu.co",
 
     # Packages
-    packages=['wosplus'],
+    packages=find_packages(exclude=['tests']),
 
     # Include additional files into the package
     include_package_data=True,
@@ -50,7 +50,7 @@ setup(
 
     #
     # license="LICENSE.txt",
-    description="WOS plus",
+    description="WOS+",
 
     # long_description=open("README.txt").read(),
 
