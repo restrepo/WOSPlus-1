@@ -88,7 +88,7 @@ class wosplus:
         Based on:
         http://stackoverflow.com/a/39225272
         '''
-        cfg=ConfigParser()
+        cfg=configparser()
         cfg.optionxform=str
         tmp=cfg.read(cfg_file)
         self.drive_file=cfg['FILES']
