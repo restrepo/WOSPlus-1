@@ -7,7 +7,7 @@ http://stackoverflow.com/a/39225272
 '''
 cfg=ConfigParser()
 cfg.optionxform=str
-tmp=cfg.read('drive.cfg')
+tmp=cfg.read('./drive.cfg')
 drive_file=cfg['FILES']
 
 def load_drive_files_keys():
