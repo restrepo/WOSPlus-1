@@ -1,17 +1,5 @@
 #!/usr/bin/env python3
 
-import os
-import re
-import sys
-import time
-import difflib
-import requests
-import itertools
-import numpy as np
-import pandas as pd
-import Levenshtein as lv
-from unidecode import unidecode
-
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.max_colwidth',1000)
@@ -79,8 +67,6 @@ class wosplus:
     The type mus be declared with the 'load_biblio' with the 'prefix' option
     (Default type is WOS)
     """
-    from configparser import ConfigParser
-    import re
 
     def __init__(self,cfg_file):
         self.df=pd.DataFrame()
