@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 
 import os
+import re
 import sys
-from include.include import *
+import time
+import difflib
+import requests
+import itertools
+import numpy as np
+import pandas as pd
+import Levenshtein as lv
+from unidecode import unidecode
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
