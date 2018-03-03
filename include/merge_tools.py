@@ -2,10 +2,10 @@ import pandas as pd
 import re
 import sys
 import numpy as np
-from include import *
+import include
 
 from unidecode import unidecode
-from wos_scp import *
+from include.wos_scp import *
 
 def df_split(dff,on,on_contains=None,Operator=None,condition=None,on_condition=None,on_not_condition=False):
     """
