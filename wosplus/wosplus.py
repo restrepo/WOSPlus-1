@@ -79,7 +79,7 @@ class wosplus:
     The type mus be declared with the 'load_biblio' with the 'prefix' option
     (Default type is WOS)
     """
-    import configparser
+    import configparser.ConfigParser as cfg
     import re
 
     def __init__(self,cfg_file):
@@ -88,7 +88,6 @@ class wosplus:
         Based on:
         http://stackoverflow.com/a/39225272
         '''
-        cfg=configparser()
         cfg.optionxform=str
         tmp=cfg.read(cfg_file)
         self.drive_file=cfg['FILES']
