@@ -79,7 +79,7 @@ class wosplus:
     The type mus be declared with the 'load_biblio' with the 'prefix' option
     (Default type is WOS)
     """
-    from configparser import ConfigParser
+    import configparser
     import re
 
     def __init__(self,cfg_file):
