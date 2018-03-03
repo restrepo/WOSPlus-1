@@ -2,6 +2,7 @@ import pandas as pd
 import re
 import sys
 import numpy as np
+
 from unidecode import unidecode
 from wos_scp import *
 
