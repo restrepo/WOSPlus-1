@@ -1,3 +1,4 @@
+configparser
 xlrd
 requests
 numpy

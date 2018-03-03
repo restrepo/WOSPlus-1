@@ -1,3 +1,5 @@
+configparser
+xlrd
 requests
 numpy
 pandas

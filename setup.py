@@ -56,6 +56,8 @@ setup(
 
     # Dependent packages (distributions)
     install_requires=[
+        'configparser',
+        'xlrd',
         'requests',
         'numpy',
         'pandas',

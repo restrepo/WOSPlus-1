@@ -10,7 +10,6 @@ WOSplus.egg-info/top_level.txt
 include/__init__.py
 include/drive.cfg
 include/google_drive_tools.py
-include/include.py
 include/merge_tools.py
 include/pajek_tools.py
 include/wos_parser.py
