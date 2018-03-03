@@ -1,5 +1,3 @@
-from . import wosplus
-
 import os
 import re
 import sys
@@ -12,3 +10,5 @@ import pandas as pd
 import Levenshtein as lv
 from unidecode import unidecode
 from configparser import ConfigParser
+
+from . import wosplus
