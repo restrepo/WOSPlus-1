@@ -3,6 +3,10 @@ import re
 import pandas as pd
 from configparser import ConfigParser
 from include.google_drive_tools import *
+from include.pajek_tools import *
+from include.wos_scp import *
+from include.merge_tools import *
+from include.wos_parser import *
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
