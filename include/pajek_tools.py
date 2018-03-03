@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-from google_drive_tools import *
-from wos_parser import *
-from wos_scp import *
+from include.google_drive_tools import *
+from include.wos_parser import *
+from include.wos_scp import *
 
 def wos_to_excel(wos_txt_google_drive_key='0B5o48PQb6nBUZm82UGNYSVRiaE0'):
     gf={'savedrecs.txt':wos_txt_google_drive_key}
