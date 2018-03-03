@@ -2,8 +2,7 @@
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname('__file__'), '../include')))
-from include import *
+from include.include import *
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
