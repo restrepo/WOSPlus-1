@@ -4,7 +4,7 @@ import sys
 import numpy as np
 
 from unidecode import unidecode
-from _wos_scp import *
+from ._wos_scp import *
 
 def df_split(dff,on,on_contains=None,Operator=None,condition=None,on_condition=None,on_not_condition=False):
     """
