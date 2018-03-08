@@ -11,9 +11,9 @@ import Levenshtein as lv
 from unidecode import unidecode
 from configparser import ConfigParser
 
-from . import _wos_scp
-from . import _merge_tools
-from . import _wos_parser
-from . import _google_drive_tools
-from . import _pajek_tools
-from . import _wosplus
+from _wos_scp import *
+from _merge_tools import *
+from _wos_parser import *
+from _google_drive_tools import *
+from _pajek_tools import *
+from wosplus import *
